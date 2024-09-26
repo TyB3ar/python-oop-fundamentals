@@ -5,7 +5,7 @@ class Vehicle:
         self.vehicle_type = vehicle_type
         self.owner = owner
         
-    def update_owner(self, reg_num, new_owner):
+    def update_owner(self, new_owner):
         self.owner = new_owner 
         
     def display_details(self):
@@ -15,5 +15,5 @@ driver1 = Vehicle('ABC-123', 'Sedan', 'Tyler')
 driver1.display_details()
 
 print(f"Updating Driver 1: ") 
-driver1.update_owner('ABC-123', 'Arielle')
+driver1.update_owner('Arielle')
 driver1.display_details() 
